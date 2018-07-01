@@ -41,6 +41,10 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
   order:1;
 }
 
+.box7 {
+  order: 2;
+}
+
 .box5 {
   order:2;
 }

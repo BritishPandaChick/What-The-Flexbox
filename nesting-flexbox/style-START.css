@@ -34,10 +34,40 @@ a:hover {
   background:rgba(0,0,0,0.4);
 }
 
-
+/* flex container */
 .slider-nav ul {
   list-style: none;
   margin: 0;
-  padding: 0; 
+  padding: 0;
+  display: flex;
 }
 
+/* First flex-item */
+.slider-nav li {
+  flex: 2; /* This is flex item -ish */
+  text-align: center;
+  display: flex; /* This is flex container -ish */
+}
+
+.slider-nav .arrow {
+  flex: 1;
+}
+
+.arrow a {
+  font-size: 30px;
+}
+
+.slider-nav a {
+  /* display: block;
+  width: 100%; */
+  flex-basis: 100%;
+  /* stretch and center */
+  display: flex;
+  align-items: center;
+}
+
+/*Flex item */
+.slider-nav span {
+  display: block;
+  width: 100%;
+}
